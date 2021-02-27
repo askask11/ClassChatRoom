@@ -1,0 +1,126 @@
+/*
+CSS file to be used for login.jsp, register.jsp, and registration-verify.jsp
+*/
+/* 
+    Created on : Nov 21, 2020, 8:06:15 PM
+    Author     : seunggulee
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Questrial&display=swap');
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10px 20px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Questrial', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #4f86c8;
+}
+a:hover {
+    opacity: 95%;
+}
+
+.warning-text {
+    color: red;
+    font-size: 14pt;
+}
+.warning-text a {
+    color: red;
+    text-decoration: underline;
+}
+
+.main-div {
+    width: 600px;
+    max-width: 95%;
+    margin: auto;
+    
+    text-align: center;
+    
+    background-color: #efefef;
+    
+    padding: 20px;
+    
+    border-radius: 12px;
+}
+.main-div p {
+    font-size: 10pt;
+}
+
+
+
+.submit-button {
+    width: 200px;
+    height: 40px;
+    
+    background-color: #4f86c8;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 12pt;
+    
+    border-radius: 6px;
+    
+    cursor: pointer;
+}
+.submit-button:hover {
+    opacity: 95%;
+}
+
+.logo-img {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+
+
+.text-input {
+    margin: auto;
+    margin-bottom: -2px;
+    
+    position: relative;
+    width: 360px;
+    height: 42px;
+    line-height: 44px;
+    
+    text-align: left;
+    background-color: #efefef;
+    
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #4f86c8;
+  transition: 0.2s all;
+  cursor: text;
+}
+.text-input input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #4f86c8;
+  box-shadow: none;
+  color: #111;
+  background-color: #eeeeee;
+  
+  font-family: 'Nunito Sans', sans-serif;
+}
+.text-input input:invalid {
+  outline: 0;
+}
+.text-input input:focus,
+.text-input input:valid {
+  border-color: #4f86c8;
+}
+.text-input input:focus~label,
+.text-input input:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: #4f86c8;
+}

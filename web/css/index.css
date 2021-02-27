@@ -1,0 +1,103 @@
+/*
+CSS file to be used for index.jsp
+*/
+/* 
+    Created on : Nov 22, 2020, 2:28:45 AM
+    Author     : seunggulee
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Questrial&display=swap');
+
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+}
+h1 {
+    font-size: 30pt;
+}
+
+
+body {
+    background-image: url("../images/background.jpg");
+}
+
+
+#logo-div {
+    
+    width: 500px;
+    height: 100px;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    
+    margin-top: 30px;
+    
+    border-radius: 12px;
+}
+#logo-div img {
+    width: 80%;
+    max-width: 90%;
+    margin-top: 12px;
+}
+
+#nav-text {
+    position: absolute;
+    top: 10px; right: 20px;
+    
+    color: white;
+}
+#nav-text a {
+    text-decoration: none;
+    color: white;
+}
+#nav-text a:hover {
+    opacity: 95%;
+}
+
+#register-button {
+    height: 40px; width: 200px;
+    
+    margin: auto;
+    
+    background-color: white;
+    color: #4f86c8;
+    
+    border-style: solid;
+    border-color: #4f86c8;
+    border-radius: 6px;
+    
+    font-family: 'Questrial', sans-serif;
+    font-size: 14pt;
+   
+    cursor: pointer;
+    transition: 0.1s;
+}
+#register-button:hover {
+    opacity: 93%;
+}
+
+
+.credits-text {
+    width: 100%;
+    
+    position: absolute;
+    bottom: 8px;
+    margin-bottom: 6px;
+    
+    font-size: 8pt;
+    line-height: 10pt;
+    
+    color: #dfdfdf;
+}
+.credits-text a {
+    text-decoration: none;
+    color: #dfdfdf;
+}

@@ -1,0 +1,261 @@
+/*
+Author: jianqing
+Date: Nov 22, 2020
+Description: This document is created for chat css
+*/
+/* 
+    Created on : Nov 22, 2020, 5:52:02 PM
+    Author     : jianqing
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Questrial&display=swap');
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+  background-image: url("../images/background.jpg");
+  
+}
+
+/* Seung-Gu's adjustments '*/
+#group-header {
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.back-text {
+    text-decoration: none;
+    position: absolute;
+    top: 10px; left: 20px;
+    color: white;
+}
+#main-container {
+    width: 900px; max-width: 90%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+#send-form {
+    width: 100%; height: 40px;
+    text-align: center;
+}
+#send-form div, #send-form button {
+    display: inline-block;
+}
+/*End of adjustments
+Main chat box*/
+
+.msgcontainer {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  /*border-color: #ccc;
+  background-color: #ddd;*/
+  border-color: rgba(255,255,255,0);
+  background-color: #A9E97A;
+}
+
+.msgcontainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.msgcontainer .avatar {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.msgcontainer .avatar.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+.inline
+{
+    display: inline;
+}
+
+.centralized
+{
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+/* imported from main.css */
+#logout-text {
+    
+    position: fixed;
+    top: 10px; right: 20px;
+    
+    text-align: right;
+    color: white;
+    line-height: 16pt;
+}
+#logout-text a {
+    text-decoration: none;
+    /*color: #4f86c8;*/
+    color: white;
+    font-size: 10pt;
+}
+
+
+.userImage
+{
+    max-width: 50%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+
+/**
+imported & modified from login.css
+**/
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10px 20px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Questrial', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #4f86c8;
+}
+a:hover {
+    opacity: 95%;
+}
+
+.warning-text {
+    color: red;
+    font-size: 14pt;
+}
+.warning-text a {
+    color: red;
+    text-decoration: underline;
+}
+
+.main-div {
+    width: 600px;
+    max-width: 95%;
+    margin: auto;
+    
+    /*text-align: center;*/
+    
+    background-color: #efefef;
+    
+    padding: 20px;
+    
+    border-radius: 12px;
+    
+}
+.main-div p {
+    font-size: 10pt;
+}
+
+
+
+.submit-button {
+    width: 100px;
+    height: 45px;
+    
+   
+    background-color: #4f86c8;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 12pt;
+    
+    border-radius: 6px;
+    
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    opacity: 95%;
+}
+
+.logo-img {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+
+
+.text-input {
+    margin: auto;
+    margin-bottom: -2px;
+    
+    position: relative;
+    width: 540px;
+    height: 42px;
+    line-height: 44px;
+    
+    text-align: left;
+    background-color: #efefef;
+    
+    border-radius: 10px;
+}
+
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #4f86c8;
+  transition: 0.2s all;
+  cursor: text;
+}
+.text-input input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #4f86c8;
+  box-shadow: none;
+  color: #111;
+  background-color: #eeeeee;
+  
+  font-family: 'Nunito Sans', sans-serif;
+}
+.text-input input:invalid {
+  outline: 0;
+}
+.text-input input:focus,
+.text-input input:valid {
+  border-color: #4f86c8;
+}
+.text-input input:focus~label,
+.text-input input:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: #4f86c8;
+}
