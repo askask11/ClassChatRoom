@@ -26,7 +26,7 @@ ClassChat can still be an effective service after the COVID-19 pandemic. It will
 
 ## How to Access
 
-ClassChat has been deployed on Johnson's server. To try it, please visit https://classchat.tech/. 
+ClassChat has been deployed on the server. To try it, please visit https://classchat.tech/. 
 
 You can create your own account (recommended); it should take less than 1-2 minutes. Alternatively, you can use a pre-made test account: classchat0@gmail.com / qwerty. 
 
